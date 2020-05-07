@@ -138,6 +138,7 @@
       }
       function generatePassword() {
         // Prompt user for password
+        //get length of password chosen by user
         var length = prompt(
           "How long would you like your password to be (8 - 128 characters)?"
         );
@@ -174,12 +175,15 @@
         ) {
           alert("You need to select at least one!");
           return;
+        } 
+        var charset = 
+        if (specialChars) {
+          //If user wants specialChars, send to variable that we can loop over
+          for 
         }
-        for (i=0; i < length; i++) {
-            password+=lowercaseChars.upperCasedCharacters.charAt(Math.floor(Math.random()*lowercaseChars.upperCasedCharacters.length));
-            password+=numericChars.charAt(Math.floor(Math.random()*numericChars.length));
-            password+=specialChars.charAt(Math.floor(Math.random()*specialChars.length));
-          } 
+        //randomize each character in arrays at the length chosen by user to get the generated password.
+          //get characters from arrays at user choice at random
+          //return generated password from generate password function
       }
       // Add event listener to generate button
       generateBtn.addEventListener("click", writePassword);
