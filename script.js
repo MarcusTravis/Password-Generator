@@ -113,19 +113,23 @@
         var length = prompt(
           "How long would you like your password to be (8 - 128 characters)?"
         );
+        //If user input does not enter a number
         length = parseInt(length);
         if (isNaN(length)) {
           alert("That is not a valid number, please try again");
           return "Not a valid number";
         }
+        //If users input equals less then eight number characters
         if (length < 8) {
           alert("Your password is to short");
           return;
         }
+        //If users input equals less then eight number characters
         if (length > 128) {
           alert("Your password is to long");
           return;
         }
+        //Section adds spec, num, upper, and lower characters to loop for randomization
         var specialChars = confirm(
           "Click OK to confirm including special characters"
         );
@@ -138,7 +142,7 @@
         var uppercaseChars = confirm(
           "Click OK to confirm including uppercase characters"
         );
-
+        // If user doesn't select any of below then they get the alert prompt below.
         if (
           !specialChars &&
           !numericChars &&
@@ -149,8 +153,10 @@
           return;
         }
 
+        // += adds the value to the empty string within password variable when
+        //  spec, num, upper, and lower characters are selected by the user
+        //specialChars, lowerCaseChars, uppeCaseChars, and numericChars
         var password = "";
-
         for (var i = 0; i < length; i++) {
           if (specialChars) {
             password += getRandomValue(specialCharacters);
@@ -167,10 +173,10 @@
         }
         return password.slice(0, length);
       }
-
+      //randomizes arrays
       function getRandomValue(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
       }
 
-      // Add event listener to generate button
+      // Add event listener attached to generate button
       generateBtn.addEventListener("click", writePassword);
