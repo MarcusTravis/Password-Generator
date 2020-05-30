@@ -40,9 +40,9 @@ N/A
 
 ## Built With
 
-*HTML<br>
-*CSS<br>
-*JavaScript
+* HTML<br>
+* CSS<br>
+* JavaScript
 
 ## Contributing
 
