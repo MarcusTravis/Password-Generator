@@ -27,7 +27,7 @@ A web browser and internet access are required.
 
 ### Installing
 
-Navigate web browser to this link: https://marcustravis.github.io/Password-Generator/
+Navigate your web browser to this link: https://marcustravis.github.io/Password-Generator/
 
 
 ## Running the tests
