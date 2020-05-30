@@ -18,7 +18,7 @@
 
 ## Description
 
-This is a password generator project to show my skills with JavaScript arrays and functions containing loops and Math.random i.g.: function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}<br>
+This is a password generator project to show my skills with JavaScript arrays and functions containing loops and Math.random i.g.: function getRandomValue(arr) {return arr[Math.floor(Math.random() * arr.length)];}<br><br>
 You can use the generator here!: https://marcustravis.github.io/Password-Generator/
 
 ### Prerequisites
